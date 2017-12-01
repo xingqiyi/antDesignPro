@@ -78,19 +78,19 @@ export default class Monitor extends PureComponent {
             >
               <Gauge
                 format={(val) => {
-									switch (parseInt(val, 10)) {
-									case 20:
-										return '差';
-									case 40:
-										return '中';
-									case 60:
-										return '良';
-									case 80:
-										return '优';
-									default:
-										return '';
-									}
-								}}
+                  switch (parseInt(val, 10)) {
+                    case 20:
+                      return '差';
+                    case 40:
+                      return '中';
+                    case 60:
+                      return '良';
+                    case 80:
+                      return '优';
+                    default:
+                      return '';
+                  }
+                }}
                 title="跳出率"
                 height={180}
                 percent={87}

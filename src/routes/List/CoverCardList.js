@@ -184,13 +184,13 @@ export default class CoverCardList extends PureComponent {
                     label="作者"
                   >
                     {getFieldDecorator('author', {})(
-                    <Select
-                    onChange={this.handleFormSubmit}
-                    placeholder="不限"
-                    style={{ maxWidth: 200, width: '100%' }}
-                  >
-                    <Option value="lisa">王昭君</Option>
-                  </Select>
+                      <Select
+                        onChange={this.handleFormSubmit}
+                        placeholder="不限"
+                        style={{ maxWidth: 200, width: '100%' }}
+                      >
+                        <Option value="lisa">王昭君</Option>
+                      </Select>
   										)}
                   </FormItem>
                 </Col>
@@ -200,14 +200,14 @@ export default class CoverCardList extends PureComponent {
                     label="好评度"
                   >
                     {getFieldDecorator('rate', {})(
-                    <Select
-                    onChange={this.handleFormSubmit}
-                    placeholder="不限"
-                    style={{ maxWidth: 200, width: '100%' }}
-                  >
-                    <Option value="good">优秀</Option>
-                    <Option value="normal">普通</Option>
-                  </Select>
+                      <Select
+                        onChange={this.handleFormSubmit}
+                        placeholder="不限"
+                        style={{ maxWidth: 200, width: '100%' }}
+                      >
+                        <Option value="good">优秀</Option>
+                        <Option value="normal">普通</Option>
+                      </Select>
   										)}
                   </FormItem>
                 </Col>

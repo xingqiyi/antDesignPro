@@ -117,12 +117,12 @@ export default class Workplace extends PureComponent {
                 &nbsp;
                 <span className={styles.event}>{events}</span>
               </span>
-						}
+            }
             description={
               <span className={styles.datetime} title={item.updatedAt}>
                 {moment(item.updatedAt).fromNow()}
               </span>
-						}
+            }
           />
         </List.Item>
       );
@@ -182,30 +182,30 @@ export default class Workplace extends PureComponent {
               bodyStyle={{ padding: 0 }}
             >
               {
-								notice.map(item => (
-  <Card.Grid className={styles.projectGrid} key={item.id}>
-    <Card bodyStyle={{ padding: 0 }} bordered={false}>
-      <Card.Meta
-        title={(
-          <div className={styles.cardTitle}>
-            <Avatar size="small" src={item.logo} />
-            <Link to={item.href}>{item.title}</Link>
-          </div>
-												)}
-        description={item.description}
-      />
-      <div className={styles.projectItemContent}>
-        <Link to={item.memberLink}>{item.member || ''}</Link>
-        {item.updatedAt && (
-        <span className={styles.datetime} title={item.updatedAt}>
-          {moment(item.updatedAt).fromNow()}
-        </span>
-												)}
-      </div>
-    </Card>
-  </Card.Grid>
-								))
-							}
+                notice.map(item => (
+                  <Card.Grid className={styles.projectGrid} key={item.id}>
+                    <Card bodyStyle={{ padding: 0 }} bordered={false}>
+                      <Card.Meta
+                        title={(
+                          <div className={styles.cardTitle}>
+                            <Avatar size="small" src={item.logo} />
+                            <Link to={item.href}>{item.title}</Link>
+                          </div>
+                        )}
+                        description={item.description}
+                      />
+                      <div className={styles.projectItemContent}>
+                        <Link to={item.memberLink}>{item.member || ''}</Link>
+                        {item.updatedAt && (
+                          <span className={styles.datetime} title={item.updatedAt}>
+                            {moment(item.updatedAt).fromNow()}
+                          </span>
+                        )}
+                      </div>
+                    </Card>
+                  </Card.Grid>
+                ))
+              }
             </Card>
             <Card
               bodyStyle={{ padding: 0 }}
@@ -229,7 +229,7 @@ export default class Workplace extends PureComponent {
               bodyStyle={{ padding: 0 }}
             >
               <EditableLinkGroup
-                onAdd={() => {}}
+                onAdd={() => { }}
                 links={links}
                 linkElement={Link}
               />
@@ -252,15 +252,15 @@ export default class Workplace extends PureComponent {
               <div className={styles.members}>
                 <Row gutter={48}>
                   {
-										members.map(item => (
-  <Col span={12} key={`members-item-${item.id}`}>
-    <Link to={item.link}>
-      <Avatar src={item.logo} size="small" />
-      <span className={styles.member}>{item.title}</span>
-    </Link>
-  </Col>
-										))
-									}
+                    members.map(item => (
+                      <Col span={12} key={`members-item-${item.id}`}>
+                        <Link to={item.link}>
+                          <Avatar src={item.logo} size="small" />
+                          <span className={styles.member}>{item.title}</span>
+                        </Link>
+                      </Col>
+                    ))
+                  }
                 </Row>
               </div>
             </Card>

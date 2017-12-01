@@ -212,13 +212,13 @@ export default class SearchList extends Component {
                     label="活跃用户"
                   >
                     {getFieldDecorator('user', {})(
-                    <Select
-                    onChange={this.handleFormSubmit}
-                    placeholder="不限"
-                    style={{ maxWidth: 200, width: '100%' }}
-                  >
-                    <Option value="lisa">李三</Option>
-                  </Select>
+                      <Select
+                        onChange={this.handleFormSubmit}
+                        placeholder="不限"
+                        style={{ maxWidth: 200, width: '100%' }}
+                      >
+                        <Option value="lisa">李三</Option>
+                      </Select>
   										)}
                   </FormItem>
                 </Col>
@@ -228,19 +228,19 @@ export default class SearchList extends Component {
                     label="好评度"
                   >
                     {getFieldDecorator('rate', {})(
-                    <FormItem
-                    label="好评度"
-                  >
-                    {getFieldDecorator('rate', {})(
-                    <Select
-                    onChange={this.handleFormSubmit}
-                    placeholder="不限"
-                    style={{ maxWidth: 200, width: '100%' }}
-                  >
-                    <Option value="good">优秀</Option>
-                  </Select>
+                      <FormItem
+                        label="好评度"
+                      >
+                        {getFieldDecorator('rate', {})(
+                          <Select
+                            onChange={this.handleFormSubmit}
+                            placeholder="不限"
+                            style={{ maxWidth: 200, width: '100%' }}
+                          >
+                            <Option value="good">优秀</Option>
+                          </Select>
   												)}
-                  </FormItem>
+                      </FormItem>
   										)}
                   </FormItem>
                 </Col>
@@ -276,10 +276,10 @@ export default class SearchList extends Component {
   									)}
                   description={
                     <span>
-                    <Tag>Ant Design</Tag>
-                    <Tag>设计语言</Tag>
-                    <Tag>蚂蚁金服</Tag>
-                  </span>
+                      <Tag>Ant Design</Tag>
+                      <Tag>设计语言</Tag>
+                      <Tag>蚂蚁金服</Tag>
+                    </span>
   									}
                 />
                 <ListContent data={item} />

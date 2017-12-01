@@ -68,8 +68,8 @@ export default class CardList extends PureComponent {
                     title={<a href="#">{item.title}</a>}
                     description={(
                       <p className={styles.cardDescription}>
-                  <span>{item.description}</span>
-                </p>
+                        <span>{item.description}</span>
+                      </p>
 										)}
                   />
                 </Card>
