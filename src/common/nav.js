@@ -4,6 +4,7 @@ import BlankLayout from '../layouts/BlankLayout';
 
 import Analysis from '../routes/Dashboard/Analysis';
 import Monitor from '../routes/Dashboard/Monitor';
+import Test from '../routes/Dashboard/Test';
 import Workplace from '../routes/Dashboard/Workplace';
 
 import TableList from '../routes/List/TableList';
@@ -48,11 +49,18 @@ const data = [
           name: '分析页',
           path: 'analysis',
           component: Analysis,
-        }, {
+        },
+        {
           name: '监控页',
           path: 'monitor',
           component: Monitor,
-        }, {
+        },
+        {
+          name: 'test',
+          path: 'test',
+          component: Test,
+        },
+        {
           name: '工作台',
           path: 'workplace',
           component: Workplace,
